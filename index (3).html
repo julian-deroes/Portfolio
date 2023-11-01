@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>My Portfolio</title>
+	<style>
+		#msg{
+			color:black;
+			margin: -20px;
+			display: block;
+		}
+		#home{
+			background-image: url(home_bg_img.jpg);
+			
+			
+		}
+		#button{
+			background-color:lightblue;
+            color: black;
+            border: 2px solid purple;
+			font-size: 18px;
+			border-radius: 8px;
+			transition-duration: 0.4s;
+		}
+		#button:hover {
+            background-color: white;
+            color: white;
+        }	
+
+		#h3{
+			color:orangered;
+		}
+		
+		/* Add this to your existing CSS or create a new external CSS file */
+
+        #mobile-nav {
+           display: none;
+           background-color: blue;
+           position:fixed;
+           top: 0;
+           width: 100%;
+           z-index: 1;
+        }
+
+        #menu-toggle {
+           background-color: aqua;
+           color: white;
+           border: none;
+           font-size: 24px;
+           padding: 10px;
+        }
+
+        #mobile-menu {
+           list-style-type: none;
+           padding: 0;
+           text-align: center;
+        }
+
+        #mobile-menu li {
+            padding: 10px;
+            border-top: 1px solid white;
+        }
+
+        #mobile-menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+      
+
+/* Add this to your existing CSS or create a new external CSS file */
+
+    @media only screen and (max-width:767px) {
+       body{
+		font-size: 12px;
+		width: 100%;
+		margin: 0;
+	   }
+	   #mobile-nav {
+            display: block;
+			
+        }
+
+        #mobile-menu {
+            display: none;
+			
+        }
+		#header{
+			display: none;
+			
+		}
+		#home, #about, #projects, #achievements, #contact {
+            padding: 20px; /* Add more padding for mobile readability */
+        font-size: 12px; /* Adjust font size for better mobile readability */
+        text-align:center; /* Centered text may not be ideal for mobile */
+        background-color: white; /* Change background color if needed */
+        color: black; /* Change text color if needed */
+	    margin: 0;}
+    }
+
+
+
+		
+		
+  
+
+		
+	</style>
+	
+</head>
+
+<body>
+	<!-- Mobile Navigation (add this code inside the <body>) -->
+<div id="mobile-nav">
+    <button id="menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+    <ul id="mobile-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+	<!--Header(start)-->
+	<table id="header" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="olive" style="color: white; position: fixed;" >
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="100%" align="center">
+					<tr>
+						<td>
+							
+
+						</td>
+
+						<td>
+							<font face="Comic sans MS" size="6">
+								<b>My Portfolio</b>
+							</font>
+						</td>
+
+						<td width="15%">
+							
+						</td>
+
+						<td>
+							<a href="#home" style="text-decoration:none">
+								<font face="Verdana" size="5" color=white>
+									Home
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#about" style="text-decoration:none">
+								<font face="Verdana" size="5" color=white>
+									About
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#projects" style="text-decoration:none">
+								<font face="Verdana" size="5" color=white>
+									Projects
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#achievements" style="text-decoration:none">
+								<font face="Verdana" size="5" color=white>
+									Resume
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#contact" style="text-decoration:none">
+								<font face="Verdana" size="5" color=white>
+									Contact
+								</font>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Header(end)-->
+
+	<!--Home(start)-->
+	<table id="home" border="0" width="100%" 
+		cellpadding="90" cellspacing="0" bgcolor="white" >
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" style="height: 600px;"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td align="center" valign="middle">
+							<h3>
+								<font face="Times New Roman"
+									size="20" color="purple">
+									Hi, I'am Julian Deroes
+								</font>
+							</h3>
+
+							<h2>
+								<font face="Verdana" size="5"
+									color="black">
+									
+						
+								</font>
+							</h2>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Home(end)-->
+
+
+	<!--About(start)-->
+	<table id="about" border="0" width="100%"
+		cellpadding="50" cellspacing="0" bgcolor="white">
+		<tr>
+			<td>
+				<table border="0" cellpadding="10"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="130" align="center"
+							valign="middle" colspan="2" style="padding-bottom: -100px;">
+							<font face="Verdana" size="7"
+								color="purple" style="text-shadow: 2px 2px 5px red;">
+								About Me
+							</font>
+							<hr color="purple">
+						</td>
+					</tr>
+					
+
+					<tr>
+						<td width="40%">
+							<img src="about_img.jpg" width="500px" height="500px" style="border-radius: 8px;">
+						</td>
+
+						<td width="60%" >
+							<font face="Verdana" size="4"
+								color="black" >
+							
+								<ul>
+									<li ><b>Name: </b>Julian Deroes J</li>
+									<li ><b>Age: </b>20</li>
+									<li ><b>Degree: </b>Master</li>
+									
+								</ul>
+								<h3 id="h3">Objective</h3>
+								My passion for computer science is the driving force behind my academic and professional pursuits. From a young age, I have been captivated by the endless possibilities and transformative power of technology. This fascination led me to embark on a journey in computer science.
+								<hr color="white">
+								My dedication to this field is unwavering. I have cultivated a strong foundation in programming languages, data structures, and algorithms, and I am constantly hungry to learn more. I view computer science as a canvas where I can paint solutions to complex problems, and I am committed to pushing the boundaries of what is possible.
+								<hr color="white">
+
+								
+								My passion for computer science is not just a career choice; it's a lifelong commitment to exploring the frontiers of technology and using it to create a brighter future.
+								<hr color="white">
+								
+							</font>
+						</td>
+					</tr>
+				</table>
+				<hr color="white">
+				<hr color="white">
+				<hr color="white">
+			</td>
+		</tr>
+	</table>
+	<hr>
+	<!--About(end)-->
+
+
+	<!--Projects(start)-->
+	<table id="projects" border="0" width="100%"
+		cellpadding="40" cellspacing="0" bgcolor="white">
+		<tr>
+			<td>
+				<table border="0" cellpadding="10"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="130" align="center"
+							valign="middle" colspan="2" >
+							<font face="Verdana" size="7"
+								color="purple" style="text-shadow: 2px 2px 5px red;">
+								Projects
+							</font>
+							<hr color="teal">
+						</td>
+					</tr>
+
+					<tr>
+						<td height="10">
+							<font face="Times New Roman"
+								size="5" color="black">
+								<ul>
+									<li>
+										Ball Moving
+										<a href="https://mutharasimsccs.github.io/Ball_Move/" style="text-decoration:none; color: purple;" target="_blank">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Ball Jump
+										<a href="https://mutharasimsccs.github.io/Ball_jump/" style="text-decoration:none; color: purple;" target="_blank">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Pacman
+										<a href="#" style="text-decoration:none; color: purple;" target="_blank">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Walk Boston
+										<a href="#" style="text-decoration:none; color: purple;" target="_blank">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Word Count
+										<a href="#" style="text-decoration:none; color: purple;" target="_blank">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Pacman2
+										<a href="#" style="text-decoration:none; color: purple;" target="_blank">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Eyeball Move
+										<a href="#" style="text-decoration:none; color: purple;" target="_blank">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Guess the Number-Game
+										<a href="#" style="text-decoration:none; color: purple;" target="_blank" >
+											 ➲
+										</a>
+									</li>
+									<hr color="#c2c0c3">
+								</ul>
+								
+							</font>
+						</td>
+
+						<td width="40%">
+							<img src="background.jpg" width="500px" height="500px" style="border-radius: 8px;">
+						</td>
+
+						
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<hr>
+	<!--Projects(end)-->
+
+	<!--Resume(start)-->
+	<table id="achievements" border="0" width="100%"
+		cellpadding="40" cellspacing="0" bgcolor="white">
+		<tr>
+			<td>
+				<table border="0" cellpadding="10"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="130" align="center" 
+						    valign="middle" colspan="2" >
+							<font face="Verdana" size="7" color="purple" style="text-shadow: 2px 2px 5px red;">
+								Resume
+								
+							</font>
+							<hr color="purple">
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+							<font face="Verdana" size="4" color="black" >
+								
+									<h3 id="h3">Acadamic Profile</h3>
+										<ul>
+											<li>
+												BSc Information Technology from Sri Sankara Bhagavathi Arts &Science College, Kommadikottai (70%). 
+											</li>
+											
+											<li>
+												10th from St Mary's Higher Secondary School, pothakalanvilai (69%). 
+											</li>
+											<li>
+												12th from St Mary's Higher Secondary School, pothakalanvilai (75%). 
+											</li>
+											
+										</ul>
+									
+							</font>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<font face="Verdana" size="4" color="black"  >
+								
+									
+										<h3 id="h3">skills</h3>
+										<ul>
+											<li>
+												<b>Programming Languages:</b> Proficient in .Net and Java.
+											</li>
+											
+											<li>
+												<b>Database Management:</b> Experienced in SQL and NoSQL databases.
+											</li>
+											
+											<li>
+												<b>Web Development:</b> Familiar with HTML , CSS and Javascript for web development.
+											</li>
+											<li>
+												<b>Microsoft Office:</b> Proficient in MS Excel and MS Word and documentation.
+											</li>
+											
+											<li>
+												<b>Good Communication:</b> Strong communication skills that facilitate effective collaboration within teams.
+											</li>
+											
+										</ul>
+							
+							</font>
+						</td>
+					</tr>
+				</table>
+				<button id="button"><a href="../PORTFOLIO/RESUME.pdf" download  style="color: black; justify-content: center; text-decoration: none;">Download Resume </a></button>
+				
+			</td>
+		</tr>
+	</table>
+	<hr>
+	<!--Resume(end)-->
+
+
+	<!--Contact(start)-->
+	<table id="contact" border="0" width="100%"
+		cellpadding="40" cellspacing="0" bgcolor="white">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="7"
+								color="purple" style="text-shadow: 2px 2px 5px red;">
+								Contact
+							</font>
+							<hr color="purple" >
+						</td>
+					</tr>
+
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" width="50%" cellpadding="15"
+								cellspacing="0" align="center" bgcolor="white" >
+								<form name="submit-to-google-sheet">
+								<tr>
+									<td width="30%">
+										
+										<font face="Verdana" size="4"
+											color="black">
+											Name
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<input name="Name" type="text" size="40" placeholder="enter your name">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%" >
+										<font face="Verdana" size="4"
+											color="black">
+											Email
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<input name="Email" type="email" size="40" placeholder="enter mail id">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="black">
+											Number
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<input name="Number" type="number" size="12" placeholder="enter your number">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="black">
+											Message
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<textarea name="Message" rows="5"
+												cols="37">
+											</textarea>
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										
+									</td>
+									<td width="70%">
+										<button id="button" type="Submit" name="submit" >
+											<font face="Verdana"
+												size="4" color="black">
+												<b>Submit</b>
+											</font>
+										</button>
+										
+									</td>
+								</tr>
+							</form>
+							<span id="msg"></span>
+							</table>
+						</td>
+
+					</tr>
+					<tr>
+						<td colspan="2">
+							
+							
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Contact(end)-->
+
+
+	<!--Footer1(start)-->
+	<table id="footer" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="purple">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%" align="center">
+					<tr align="center">
+
+						<td width="13%" valign="top" style="color: white;">
+							<b>LinkedIn</b>
+							<a href="https://www.linkedin.com/in/mutharasi-s" style="text-decoration:none; color: white;">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top" style="color: white;">
+							<b>GitHub</b>
+							<a href="https://github.com/MutharasiMsccs" style="text-decoration:none; color: white;">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+						<td width="13%" valign="top" style="color: white;">
+							<b>Instagram</b>
+							<a href="#" style="text-decoration:none; color: white;">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top" style="color: white;">
+							<b>Email</b>
+							<a href="mailto:mutharasis23@gmail.com" style="text-decoration:none;color:white;">
+								➲
+							</a>
+						</td>
+
+						
+
+					
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer1(end)-->
+
+
+	<!--Footer2(start)-->
+	<table id="footer" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#9976ab">
+		<tr>
+			<td>
+				<table border="0" cellpadding="10"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="80%" valign="top" align="center">
+							<font face="Verdana"
+								color="black" size="2">
+								©Copyright 2050 by Mutharasi.
+								All rights reserved.
+							</font>
+						</td>
+
+						
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer2(end)-->
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbx978QMmHvsBYOua1YAzAFSTDdX4igH9re7Kvgw117qiQQZq23X_oxVi0ldkWKdlx3QvQ/exec'
+		const form = document.forms['submit-to-google-sheet']
+	    const msg = document.getElementById("msg")
+
+		form.addEventListener('submit', e => {
+		  e.preventDefault()
+		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => {
+				msg.innerHTML="message send successfully"
+				setTimeout(function(){
+					msg.innerHTML=""
+				},3000)
+				form.reset()
+			})
+			.catch(error => console.error('Error!', error.message))
+		})
+
+
+
+		function toggleMobileMenu() {
+			var menu = document.getElementById("mobile-menu");
+			if (menu.style.display === "block") {
+              menu.style.display = "none";
+            } else {
+             menu.style.display = "block";
+            }
+
+
+    
+
+    
+        }
+
+	  </script>
+</body>
+
+</html>
